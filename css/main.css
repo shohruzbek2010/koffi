@@ -1,0 +1,311 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+a{
+  text-decoration: none;
+}
+input{
+  outline: none;
+}
+ul, ol{
+  list-style: none;
+}
+
+button{
+  border: none;
+}
+html{
+  height: 100%;
+}
+
+body{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Rubik', sans-serif;
+}
+.container{
+  width: 100%;
+  max-width: 1442px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+
+
+
+header{
+  display: flex;
+  flex-direction: column ;
+  
+  height: 100vh  ;
+  background-image: url('../imgs/big-img-coffe.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 28.5px;
+  padding-bottom: 33px;
+}
+
+
+.nav-container {
+  display: flex;
+  align-items: center;
+    justify-content: space-between;
+}
+
+.menu-left{
+  display: flex;
+  align-items: center;
+}
+.menu-btn{
+  display: none;
+}
+.links-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 35px;
+}
+
+.links {
+  color: #ffff   ;
+  font-size: 20px;
+  line-height: 25px  ;
+  letter-spacing: -0.33px ;
+}
+.links:hover{
+  color: yellow;
+}
+.nav-icons {
+  display: flex;
+  gap: 26px;
+}
+.hero {
+    width: 100%;
+    height: 100vh;
+    
+}
+
+
+.hero{
+   flex-grow: 1;
+}
+.hero-container{
+  height: 100%;
+  text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.title{
+ margin: 0 auto;
+   font-family: 'Lobster', display;
+  color: #ffff;
+  font-size: 100px;
+  line-height: 100%;
+}
+
+
+
+
+
+
+
+
+
+main{
+  flex-grow: 1;
+}
+
+@media (max-width:1200 px){
+.title{
+  font-size: 80px;
+}
+}
+
+
+
+@media (max-width:900px){
+  .logo{
+    width:160px ;
+    height: 75px;
+  }
+  .nav-icons a img {
+width: 50px;
+height: 50px;
+  }
+  .title{
+  font-size: 70px;
+}
+}
+
+@media (max-width:768px){
+  .links-nav{
+    display: none;
+  }
+  .menu-btn{
+    display: block;
+  }
+  .title{
+  font-size: 60px;
+}
+}
+
+@media (max-width:450px){
+  header{
+    background-image: url('../imgs/small-coffe.png');
+  }
+  .nav-icons{
+    gap: 10px;
+  }
+  .title{
+  font-size: 50px;
+}
+}
+
+
+.pictures {
+    background: #E7D8B5;
+    padding: 80px 0;
+}
+
+.pictures .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.p-text {
+    flex: 1;
+}
+
+.p-text h2 {
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: -0.33px   ;
+    margin-bottom: 20px;
+}
+
+.p-text p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.p-text button {
+    padding: 10px 20px;
+    background: #F4A300;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.picture-imgs{
+    flex: 1;
+    display: flex;
+    gap: 20px;
+}
+
+.picture-imgs img {
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+
+@media (max-width: 992px) {
+    .pictures .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .picture-imgs {
+        justify-content: center;
+        display: block;
+    }
+
+ 
+}
+
+@media (max-width: 600px) {
+
+    .pictures{
+        padding: 50px 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+.futures {
+  background: #3b2314;
+  color: #fff;
+  padding: 60px 20px;
+}
+
+.futures-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.futures-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.future{
+  text-align: center;
+}
+
+.future img {
+  width: 50px;
+  margin-bottom: 15px;
+}
+
+.future h3 {
+  margin-bottom: 10px;
+}
+
+.future p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #f1e6dc;
+}
+
+
+@media (max-width: 768px) {
+  .futures-box {
+    grid-template-columns: 1fr;
+  }
+
+  .future {
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+  }
+
+  .future:last-child {
+    border-bottom: none;
+  }
+}
+@media (max-width: 600px){
+  .future:last-child {
+    border-bottom: none;
+  }
+}
